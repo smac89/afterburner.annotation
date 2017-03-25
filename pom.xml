@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.sonatype.oss</groupId>
@@ -6,18 +7,15 @@
         <version>9</version>
     </parent>
     <groupId>com.airhacks</groupId>
-    <artifactId>afterburner.fx</artifactId>
-    <version>1.7.1-SNAPSHOT</version>
+    <artifactId>afterburner.annotation</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>afterburner.fx</name>
-    <description>afterburner.fx is a minimalistic JavaFX MVP framework based on Convention over Configuration and Dependency Injection</description>
-    <url>http://afterburner.adam-bien.com</url>
-    <organization>
-        <name>Adam Bien</name>
-        <url>http://adam-bien.com</url>
-    </organization>
-    <inceptionYear>2013</inceptionYear>
+    <name>afterburner.fxml</name>
+    <description>afterburner.annotation is an extension to afterburner.fx that aims to
+        allow users to leverage the power of annotation processing in making use of afterburner.fx
+    </description>
+    <inceptionYear>2017</inceptionYear>
 
     <licenses>
         <license>
@@ -32,8 +30,17 @@
             <organization>adam-bien.com</organization>
             <organizationUrl>http://adam-bien.com</organizationUrl>
         </developer>
+        <developer>
+            <name>Smac89</name>
+        </developer>
     </developers>
     <dependencies>
+        <dependency>
+            <groupId>com.airhacks</groupId>
+            <artifactId>afterburner.fx</artifactId>
+            <version>1.7.0</version>
+            <scope>compile</scope>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -175,13 +182,13 @@
                 </includes>
             </resource>
         </resources>
-        <finalName>afterburner</finalName>
+        <finalName>afterburner.annotation</finalName>
     </build>
     <scm>
-        <connection>scm:git:git@github.com:AdamBien/afterburner.fx.git</connection>
-        <url>scm:git:git@github.com:AdamBien/afterburner.fx.git</url>
-        <developerConnection>scm:git:git@github.com:AdamBien/afterburner.fx.git</developerConnection>
-        <tag>v1.6.2</tag>
+        <connection>scm:git@github.com:smac89/afterburner.annotation.git</connection>
+        <url>scm:git@github.com:smac89/afterburner.annotation.git</url>
+        <developerConnection>scm:git@github.com:smac89/afterburner.annotation.git</developerConnection>
+        <tag>v1</tag>
     </scm>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

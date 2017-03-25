@@ -9,4 +9,3 @@ uploadSnapshot.sh
 *.settings/
 /pom.xml.releaseBackup
 /release.properties
-/nbproject/
